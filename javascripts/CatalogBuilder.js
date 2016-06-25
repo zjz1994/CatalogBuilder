@@ -12,7 +12,7 @@ jQuery(document).ready(function ()
 });
 function build_catalog()
 {
-    var headings = jQuery("#content").find("h1,h2,h3,h4,h5,h6");//寻找所有标题
+    var headings = jQuery("#main-content").find("h1,h2,h3,h4,h5,h6");//寻找所有标题
     if (headings.length < 2)
 	{
         return;
@@ -76,7 +76,7 @@ function build_catalog()
 	//加上外框
 	catalog_struct = '<div class="leftNav">' + catalog_struct;
 	catalog_struct += '</div>';
-    jQuery(catalog_struct).insertBefore(jQuery("#content"));
+    jQuery(catalog_struct).insertBefore(jQuery("#main-content"));
 	for(var i=0;i<tree_block_list.length;i++)
 	{
 		display_hide(tree_block_list[i]);
