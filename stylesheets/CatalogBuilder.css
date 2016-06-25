@@ -1,0 +1,98 @@
+.leftNav {
+	width: 300px;
+	border:#636363 1px solid;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+.tree_div {
+	margin-left: 15px;
+	color: #636363;
+	font-size: 14px;
+	font-weight: normal;
+	color: black;
+	overflow: auto;
+	padding: 0 0 1em 0;
+	overflow-x: hidden;
+}
+
+.treeNode {
+	white-space: nowrap;
+	text-indent: -14px;
+	margin: 6px 2px 5px 14px;
+}
+
+a.tree_unselected:hover, a.tree_selected:hover, a.category:hover{
+	background-color: #BFD9ED;
+	text-decoration: none;
+}
+
+a.tree_unselected, a.tree_selected, a.category{
+	color: black;
+	padding: 1px 3px 1px 0;
+	text-decoration: none;
+}
+
+a.tree_selected {
+/* 	background-color: #B9E0F7;*/
+	background-color: transparent;
+}
+
+a.tree_unselected {
+	background-color: transparent;
+}
+
+.tree_subnodes {
+	display: block;
+}
+
+.tree_subnodes_hidden {
+	display: none;
+}
+div.treeNode a, div.treeNode span.api_root category{
+	display: inline-block;
+	text-indent: 0;
+	white-space: normal;
+	width: 95%;
+	word-wrap: break-word;
+}
+
+div.treeNode span.category {
+	cursor: pointer;
+}
+
+.show_off_icon {
+	content: "";
+	cursor: pointer;
+	position: absolute;
+	width: 0.5em;
+	margin-left: -12px;
+	margin-top: 0.3em;
+	height: 0.5em;
+	border: 0.2em solid #636363;
+	-webkit-transform: rotate(-135deg);
+	-moz-transform: rotate(-135deg);
+	-o-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+	transform: rotate(-135deg);
+	border-top: none;
+	border-right: none;
+}
+
+.show_on_icon {
+	content: "";
+	cursor: pointer;
+	position: absolute;
+	width: 0.5em;
+	margin-left: -12px;
+	margin-top: 0.3em;
+	height: 0.5em;
+	border: 0.2em solid #636363;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	border-top: none;
+	border-right: none;
+}
+}
